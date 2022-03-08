@@ -1,0 +1,61 @@
+.body {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 127, 80, 0.563);
+    border-radius: 13px;
+}
+
+.container {
+    width: 95%;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    background-color: black;
+    box-shadow: 5px 5px 15px 5px coral;
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(12, 9, 9, 0.9);
+    width: 1200px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    border-radius: 13px;
+    box-shadow: 11px 11px 28px 0px coral;
+}
+
+.wrapper__company-select, .wrapper__complex-select, .wrapper__houses-select, .wrapper__credit-duration-select, .wrapper__results-wrapper {
+    width: 250px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.932);
+    color: white;
+    font-size: 16px;
+}
+
+.wrapper__houses-select {
+    width: 70px;
+}
+
+.wrapper__credit-duration-select {
+    width: 70px;
+}
+
+.wrapper__results-wrapper {
+    width: 450px;
+    color: coral;
+}
+
+p {
+     color: coral;
+}
