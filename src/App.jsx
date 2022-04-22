@@ -8,6 +8,7 @@ function App() {
   const [credits, setCredits] = useState([]);
   const [bankes, setBankes] = useState([]);
 
+
   const [creditDuration, setCreditDuration] = useState([]);
   const [companyResult, setCompanyResult] = useState([]);
   const [complexesResult, setComplexesResult] = useState([]);
