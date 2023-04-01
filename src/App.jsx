@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => { 
     fetch("https://cred-2-m8218596.deta.app/companies",{
-      // method: "POST", 
+      method: "GET", 
       body: JSON.stringify(data),
       mode: 'cors',
       headers: {
