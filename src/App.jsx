@@ -26,7 +26,7 @@ function App() {
     }).then((res) => res.json())
      .then((data) => setCompanies(data));
 
-    fetch("https://cred-2-m8218596.deta.app/credits"{
+    fetch("https://cred-2-m8218596.deta.app/credits", {
       method: "GET", 
       body: JSON.stringify(data),
       mode: 'cors',
