@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => { 
     fetch("https://cred-2-m8218596.deta.app/companies",{
-      method: "GET", 
+      method: "POST", 
       body: JSON.stringify(data),
       mode: 'cors',
       headers: {
@@ -27,7 +27,7 @@ function App() {
      .then((data) => setCompanies(data));
 
     fetch("https://cred-2-m8218596.deta.app/credits", {
-      method: "GET", 
+      method: "POST", 
       body: JSON.stringify(data),
       mode: 'cors',
       headers: {
