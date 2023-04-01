@@ -15,7 +15,7 @@ function App() {
   const [activeState, setActiveState] = useState([]);
   const [filtHouse, setFiltHouse] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => { 
     fetch("https://crediting-houses.herokuapp.com/companies")
       .then((res) => res.json())
       .then((data) => setCompanies(data));
