@@ -26,8 +26,14 @@ function App() {
     }).then((res) => res.json())
      .then((data) => setCompanies(data));
 
-    fetch("https://cred-2-m8218596.deta.app/credits")
-      .then((res) => res.json())
+    fetch("https://cred-2-m8218596.deta.app/credits"{
+      method: "GET", 
+      body: JSON.stringify(data),
+      mode: 'cors',
+      headers: {
+          'Content-Type': 'application/json',
+      }
+    }).then((res) => res.json())
       .then((data) => setCredits(data));
 
     const filtHouse = houses.find((item) => item.house_number == activeState);
