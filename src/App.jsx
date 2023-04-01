@@ -19,7 +19,7 @@ function App() {
     fetch("https://cred-2-m8218596.deta.app/companies",{
       method: "GET", 
       body: JSON.stringify(data),
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
           'Content-Type': 'application/json',
       }
