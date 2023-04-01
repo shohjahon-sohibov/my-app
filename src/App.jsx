@@ -16,14 +16,14 @@ function App() {
   const [filtHouse, setFiltHouse] = useState([]);
 
   useEffect(() => { 
-    fetch("https://cred-1-m8218596.deta.app/companies",{
+    fetch("https://credit-eq8o.onrender.com/companies",{
       headers: {
           'Content-Type': 'application/json',
       }
     }).then((res) => res.json())
      .then((data) => setCompanies(data));
 
-    fetch("https://cred-1-m8218596.deta.app/credits", {
+    fetch("https://credit-eq8o.onrender.com/credits", {
       headers: {
           'Content-Type': 'application/json',
       }
@@ -36,7 +36,7 @@ function App() {
 
   const handleCompanies = (e) => {
     fetch(
-      `https://cred-2-m8218596.deta.app/complexes?companyID=${e.target.selectedIndex + 1}`
+      `https://credit-eq8o.onrender.com/complexes?companyID=${e.target.selectedIndex + 1}`
     )
       .then((res) => res.json())
       .then((data) => setComplexes(data));
@@ -46,7 +46,7 @@ function App() {
 
   const handleComplexes = (e) => {
     fetch(
-      `https://cred-2-m8218596.deta.app/houses?complexID=${e.target.selectedIndex + 1}`
+      `https://credit-eq8o.onrender.com/houses?complexID=${e.target.selectedIndex + 1}`
     )
       .then((res) => res.json())
       .then((data) => setHouses(data));
@@ -56,7 +56,7 @@ function App() {
 
   const handleCredits = (e) => {
     fetch(
-      `https://cred-2-m8218596.deta.app/bankes?houseID=${activeState}&creditID=${
+      `https://credit-eq8o.onrender.com/bankes?houseID=${activeState}&creditID=${
         e.target.selectedIndex + 1
       }`
     )
