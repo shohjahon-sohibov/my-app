@@ -16,11 +16,11 @@ function App() {
   const [filtHouse, setFiltHouse] = useState([]);
 
   useEffect(() => { 
-    fetch("https://crediting-houses.herokuapp.com/companies")
+    fetch("https://cred-2-m8218596.deta.app/companies")
       .then((res) => res.json())
       .then((data) => setCompanies(data));
 
-    fetch("https://crediting-houses.herokuapp.com/credits")
+    fetch("https://cred-2-m8218596.deta.app/credits")
       .then((res) => res.json())
       .then((data) => setCredits(data));
 
@@ -30,7 +30,7 @@ function App() {
 
   const handleCompanies = (e) => {
     fetch(
-      `https://crediting-houses.herokuapp.com/complexes?companyID=${e.target.selectedIndex + 1}`
+      `https://cred-2-m8218596.deta.app/complexes?companyID=${e.target.selectedIndex + 1}`
     )
       .then((res) => res.json())
       .then((data) => setComplexes(data));
@@ -40,7 +40,7 @@ function App() {
 
   const handleComplexes = (e) => {
     fetch(
-      `https://crediting-houses.herokuapp.com/houses?complexID=${e.target.selectedIndex + 1}`
+      `https://cred-2-m8218596.deta.app/houses?complexID=${e.target.selectedIndex + 1}`
     )
       .then((res) => res.json())
       .then((data) => setHouses(data));
@@ -50,7 +50,7 @@ function App() {
 
   const handleCredits = (e) => {
     fetch(
-      `https://crediting-houses.herokuapp.com/bankes?houseID=${activeState}&creditID=${
+      `https://cred-2-m8218596.deta.app/bankes?houseID=${activeState}&creditID=${
         e.target.selectedIndex + 1
       }`
     )
