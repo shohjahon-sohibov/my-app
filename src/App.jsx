@@ -16,14 +16,14 @@ function App() {
   const [filtHouse, setFiltHouse] = useState([]);
 
   useEffect(() => { 
-    fetch("https://cred-2-m8218596.deta.app/companies",{
+    fetch("https://cred-1-m8218596.deta.app/companies",{
       headers: {
           'Content-Type': 'application/json',
       }
     }).then((res) => res.json())
      .then((data) => setCompanies(data));
 
-    fetch("https://cred-2-m8218596.deta.app/credits", {
+    fetch("https://cred-1-m8218596.deta.app/credits", {
       headers: {
           'Content-Type': 'application/json',
       }
