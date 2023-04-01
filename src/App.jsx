@@ -16,9 +16,15 @@ function App() {
   const [filtHouse, setFiltHouse] = useState([]);
 
   useEffect(() => { 
-    fetch("https://cred-2-m8218596.deta.app/companies")
-      .then((res) => res.json())
-      .then((data) => setCompanies(data));
+    fetch("https://cred-2-m8218596.deta.app/companies",{
+      // method: "POST", 
+      body: JSON.stringify(data),
+      mode: 'cors',
+      headers: {
+          'Content-Type': 'application/json',
+      }
+    }).then((res) => res.json())
+     .then((data) => setCompanies(data));
 
     fetch("https://cred-2-m8218596.deta.app/credits")
       .then((res) => res.json())
